@@ -3,17 +3,17 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('home');
+    return view('home', ['title' => 'HOME PAGE']);
 });
 
 Route::get('/about', function () {
-    return view('about', ['nama' => 'nobel']);
+    return view('about', ['nama' => 'nobel', 'title' => 'ABOUT PAGE']);
 });
 Route::get('/blog', function () {
-    return view('blog');
+    return view('blog', ['title' => 'BLOG PAGE']);
 });
 Route::get('/contact', function () {
-    return view('contact');
+    return view('contact', ['title' => 'CONTACT PAGE']);
 });
 
 // buat 2 rute baru
